@@ -10,13 +10,13 @@ Installation
 Clone the repository:
 
 
-`js
+`
 git clone https://github.com/your-username/pdf-summary-api.git
 `
 cd pdf-summary-api
 Install dependencies:
 
-`js
+`
 npm install
 `
 Set up environment variables:
@@ -28,7 +28,7 @@ API_KEY=your_openai_api_key
 Usage
 Start the server:
 
-`js
+`
 npm start
 `
 Upload a PDF file:
@@ -37,7 +37,7 @@ Send a POST request to /api/upload with the PDF file attached as file.
 
 Example using curl:
 
-`js
+`
 curl -X POST -F "file=@path/to/your/file.pdf" http://localhost:5500/api/upload
 `
 Response:
