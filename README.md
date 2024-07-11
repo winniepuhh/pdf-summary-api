@@ -9,13 +9,16 @@ Error Handling: Handle errors gracefully with descriptive error messages.
 Installation
 Clone the repository:
 
-bash
+
+`js
 git clone https://github.com/your-username/pdf-summary-api.git
+`
 cd pdf-summary-api
 Install dependencies:
 
-bash
+`js
 npm install
+`
 Set up environment variables:
 
 Create a .env file in the root directory and add your OpenAI API key:
@@ -25,18 +28,18 @@ API_KEY=your_openai_api_key
 Usage
 Start the server:
 
-bash
-Копіювати код
+`js
 npm start
+`
 Upload a PDF file:
 
 Send a POST request to /api/upload with the PDF file attached as file.
 
 Example using curl:
 
-bash
-Копіювати код
+`js
 curl -X POST -F "file=@path/to/your/file.pdf" http://localhost:5500/api/upload
+`
 Response:
 
 Upon successful upload and processing, the API will respond with a JSON object containing the summarized text.
